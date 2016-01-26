@@ -1,2 +1,2 @@
-# xlog
+# XLog
 PHP Logger

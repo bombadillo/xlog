@@ -6,9 +6,11 @@ class BacktraceRetriever
 {
   public static function Retrieve($backtrace)
   {
-    unset($backtrace[0]);
-    if (count($backtrace) > 1) unset($backtrace[1]);
-    rsort($backtrace);
+    if (count($backtrace) == 3) {
+      return self::GetFileNameOfCallingScript($backtrace);
+    }
+
+    $backtrace = array_slice($backtrace, 3, count($backtrace));
 
     $formattedBacktrace = '';
 
@@ -19,5 +21,10 @@ class BacktraceRetriever
     $formattedBacktrace = substr($formattedBacktrace, 0, strlen($formattedBacktrace) - 4);
 
     return $formattedBacktrace;
+  }
+
+  private static function GetFileNameOfCallingScript($backtrace)
+  {
+    return basename($backtrace[2]['file']);
   }
 }

@@ -2,11 +2,11 @@
 
 namespace XLog;
 
-include_once __DIR__ . '\..\Services\BacktraceRetriever.php';
 include_once __DIR__ . '\..\Services\LevelPermissionHandler.php';
+include_once __DIR__ . '\..\Services\OutputMessageFormatter.php';
 
-use XLog\BacktraceRetriever;
 use XLog\LevelPermissionHandler;
+use XLog\OutputMessageFormatter;
 
 class LogFileOutputter
 {
@@ -17,8 +17,7 @@ class LogFileOutputter
 
     if ($userConfig->logFile->enable == 'true' && $levelHasPermission)
     {
-      $backtrace = BacktraceRetriever::Retrieve(debug_backtrace());
-      $logItem = sprintf('[%s] [%s] [%s] %s%s', date('y-m-d h-m-s'), $level, $backtrace, $message, PHP_EOL);
+      $logItem = OutputMessageFormatter::Format($level, $message);
 
       file_put_contents($logFile, $logItem, FILE_APPEND);
     }

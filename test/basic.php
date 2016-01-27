@@ -10,7 +10,7 @@ class Foo
   {
     $logger = new Logger();
 
-    $logger->log('trace', 'Trace to log in bar');
+    $logger->log('error', 'Trace to log in bar');
   }
 }
 
@@ -20,7 +20,7 @@ class BasicTest
   {
     $logger = new Logger();
 
-    $logger->log('trace', 'Trace to log in go');
+    $logger->log('info', 'Trace to log in go');
 
     Foo::bar();
   }

@@ -1,6 +1,10 @@
 # XLog
 A simple PHP Logger
 
+## TODO
+* Add [Composer](https://getcomposer.org) support __done__
+* Comply with PSR-3
+
 ## Installation
 
 * Copy XLog folder to a location where you can reference it.

@@ -13,7 +13,7 @@ class Config
         'warn' => "\033[33m",
         'info' => "\033[36m",
         'debug' => "\033[32m",
-        'trace' => "\033[35m"
+        'trace' => "\033[35m",
     ];
 
     public static $Levels =
@@ -23,6 +23,6 @@ class Config
         'warn',
         'info',
         'debug',
-        'trace'
-    ];        
+        'trace',
+    ];
 }

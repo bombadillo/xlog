@@ -6,26 +6,25 @@ use XLog\Logger;
 
 class Foo
 {
-  public static function bar()
-  {
-    $logger = new Logger();
+    public static function bar()
+    {
+        $logger = new Logger();
 
-    $logger->log('error', 'Trace to log in bar');
-  }
+        $logger->log('error', 'Trace to log in bar');
+    }
 }
 
 class BasicTest
 {
-  public static function go()
-  {
-    $logger = new Logger();
+    public static function go()
+    {
+        $logger = new Logger();
 
-    $logger->log('info', 'Trace to log in go');
+        $logger->log('info', 'Trace to log in go');
 
-    Foo::bar();
-  }
+        Foo::bar();
+    }
 }
-
 
 $logger = new Logger();
 

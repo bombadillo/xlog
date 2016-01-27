@@ -2,9 +2,7 @@
 
 namespace XLog;
 
-include_once __DIR__ . '\..\Services\BacktraceRetriever.php';
-
-use XLog\BacktraceRetriever;
+include_once __DIR__.'\..\Services\BacktraceRetriever.php';
 
 class OutputMessageFormatter
 {
@@ -15,6 +13,6 @@ class OutputMessageFormatter
         $logItem = sprintf('%s|%s|%s|%s%s', date('Y-m-d H:i:s:u'), strtoupper($level),
                            $backtrace, $message, PHP_EOL);
 
-       return $logItem;
+        return $logItem;
     }
 }

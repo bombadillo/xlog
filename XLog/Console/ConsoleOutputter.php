@@ -1,9 +1,10 @@
 <?php
 
-namespace XLog;
+namespace XLog\Console;
 
-include_once __DIR__.'\..\Common\Config.php';
-include_once __DIR__.'\..\Services\OutputMessageFormatter.php';
+use XLog\Service\LevelPermissionHandler;
+use XLog\Config;
+use XLog\Service\OutputMessageFormatter;
 
 class ConsoleOutputter
 {

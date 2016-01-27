@@ -1,9 +1,9 @@
 <?php
 
-namespace XLog;
+namespace XLog\File;
 
-include_once __DIR__.'\..\Services\LevelPermissionHandler.php';
-include_once __DIR__.'\..\Services\OutputMessageFormatter.php';
+use XLog\Service\LevelPermissionHandler;
+use XLog\Service\OutputMessageFormatter;
 
 class LogFileOutputter
 {

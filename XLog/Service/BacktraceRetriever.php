@@ -1,6 +1,6 @@
 <?php
 
-namespace XLog;
+namespace XLog\Service;
 
 class BacktraceRetriever
 {

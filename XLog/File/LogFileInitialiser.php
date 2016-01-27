@@ -1,10 +1,10 @@
 <?php
 
-namespace XLog;
+namespace XLog\File;
 
-include_once 'LogFileNameFormatter.php';
-include_once 'LogFileCreator.php';
-include_once __DIR__.'\..\Common\Config.php';
+use XLog\Config;
+use XLog\File\LogFileCreator;
+use XLog\File\LogFileNameFormatter;
 
 class LogFileInitialiser
 {

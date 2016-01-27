@@ -1,8 +1,8 @@
 <?php
 
-namespace XLog;
+namespace XLog\File;
 
-include_once __DIR__.'\..\Common\Config.php';
+use XLog\Config;
 
 class LogFileNameFormatter
 {

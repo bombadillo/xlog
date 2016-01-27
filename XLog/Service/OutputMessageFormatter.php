@@ -1,8 +1,8 @@
 <?php
 
-namespace XLog;
+namespace XLog\Service;
 
-include_once __DIR__.'\..\Services\BacktraceRetriever.php';
+use XLog\Service\BacktraceRetriever;
 
 class OutputMessageFormatter
 {

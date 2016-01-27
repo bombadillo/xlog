@@ -2,10 +2,10 @@
 
 namespace XLog;
 
-include_once 'Services\UserConfigRetriever.php';
-include_once 'File\LogFileInitialiser.php';
-include_once 'File\LogFileOutputter.php';
-include_once 'Console\ConsoleOutputter.php';
+use XLog\Console\ConsoleOutputter;
+use XLog\Service\UserConfigRetriever;
+use XLog\File\LogFileInitialiser;
+use XLog\File\LogFileOutputter;
 
 class Logger
 {

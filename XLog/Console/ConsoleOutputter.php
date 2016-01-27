@@ -16,7 +16,8 @@ class ConsoleOutputter
 
         if ($userConfig->console->enable == 'true' && $levelHasPermission) {
             $levelColour = Config::$LevelColours[$level];
-            echo $levelColour.OutputMessageFormatter::Format($level, $message).self::$ColourTerminator;
+            $logItem = OutputMessageFormatter::Format($level, $message);
+            echo $levelColour.$logItem.self::$ColourTerminator;
         }
     }
 }

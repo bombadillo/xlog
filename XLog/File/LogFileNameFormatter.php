@@ -2,7 +2,7 @@
 
 namespace XLog;
 
-include_once 'Config.php';
+include_once __DIR__ . '\..\Common\Config.php';
 
 use XLog\Config;
 
@@ -21,7 +21,7 @@ class LogFileNameFormatter
         return false;
         break;
     }
-    
+
     return $fileName;
   }
 }

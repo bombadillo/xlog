@@ -4,7 +4,7 @@ namespace XLog;
 
 include_once 'LogFileNameFormatter.php';
 include_once 'LogFileCreator.php';
-include_once 'Config.php';
+include_once __DIR__ . '\..\Common\Config.php';
 
 use XLog\LogFileNameFormatter;
 use XLog\LogFileCreator;

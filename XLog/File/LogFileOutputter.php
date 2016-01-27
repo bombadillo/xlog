@@ -2,8 +2,8 @@
 
 namespace XLog;
 
-include_once 'BacktraceRetriever.php';
-include_once 'LevelPermissionHandler.php';
+include_once __DIR__ . '\..\Services\BacktraceRetriever.php';
+include_once __DIR__ . '\..\Services\LevelPermissionHandler.php';
 
 use XLog\BacktraceRetriever;
 use XLog\LevelPermissionHandler;

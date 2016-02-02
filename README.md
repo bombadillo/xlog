@@ -3,7 +3,7 @@ A simple PHP Logger
 
 ## Requirements
 * PHP >= 5.3
-* Composer
+* [Composer](https://getcomposer.org/)
 
 ## TODO
 * Add [Composer](https://getcomposer.org) support __done__

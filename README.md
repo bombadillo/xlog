@@ -1,6 +1,10 @@
 # XLog
 A simple PHP Logger
 
+## Requirements
+* PHP >= 5.3
+* Composer
+
 ## TODO
 * Add [Composer](https://getcomposer.org) support __done__
 * Comply with PSR-3

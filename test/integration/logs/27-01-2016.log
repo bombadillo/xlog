@@ -1,3 +1,0 @@
-2016-01-27 16:20:14:000000|TRACE|basic.php|Trace to log in base script
-2016-01-27 16:20:14:000000|INFO|BasicTest.go|Trace to log in go
-2016-01-27 16:20:14:000000|ERROR|Foo.bar -> BasicTest.go|Trace to log in bar

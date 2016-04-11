@@ -13,6 +13,7 @@ A simple PHP Logger
 
 * Copy XLog folder to a location where you can reference it.
 * Add reference in your application e.g. ```PHP include_once 'XLog\Logger.php'```
+* Edit log file location in config
 
 ## Usage
 
